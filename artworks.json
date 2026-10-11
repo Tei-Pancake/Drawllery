@@ -1,0 +1,223 @@
+{
+  "artworks": [
+    {
+      "src": "Images/+.jpg",
+      "title": "Gradient",
+      "description": "Doodles."
+    },
+    {
+      "src": "Images/3.jpg",
+      "title": "The Third Thought",
+      "description": "I loved that red pen. It was so cute."
+    },
+    {
+      "src": "Images/4.jpg",
+      "title": "Reference",
+      "description": "When you look for references on Pinterest vs. when you don't."
+    },
+    {
+      "src": "Images/4.jpg",
+      "title": "Déjà Vu",
+      "description": "Haven't we seen this one before?"
+    },
+    {
+      "src": "Images/5.jpg",
+      "title": "Posca",
+      "description": "My first time incorporating Posca markers into my drawings."
+    },
+    {
+      "src": "Images/6.jpg",
+      "title": "Little Man",
+      "description": "I don't remember where I got the idea for this little guy, but he's so cute."
+    },
+    {
+      "src": "Images/7.jpg",
+      "title": "Luffy",
+      "description": "I was watching One Piece, saw Luffy in that pose, and thought he would be fun to draw."
+    },
+    {
+      "src": "Images/8.jpg",
+      "title": "Kirby Chad",
+      "description": "I'm a kind dude."
+    },
+    {
+      "src": "Images/56.jpg",
+      "title": "File No. 56",
+      "description": "An entry from an unknown collection."
+    },
+    {
+      "src": "Images/alice.jpg",
+      "title": "Alice, Somewhere Else",
+      "description": "I'm not very good at drawing dark skin from imagination."
+    },
+    {
+      "src": "Images/bur.jpg",
+      "title": "Bur",
+      "description": "ger."
+    },
+    {
+      "src": "Images/coki.jpg",
+      "title": "Coki's Little World",
+      "description": "I love cookies."
+    },
+    {
+      "src": "Images/dead.jpg",
+      "title": "Deadpool",
+      "description": "I'm a pirate now."
+    },
+    {
+      "src": "Images/duck.jpg",
+      "title": "Duck",
+      "description": "A duck with absolutely no explanation to give."
+    },
+    {
+      "src": "Images/flower.jpg",
+      "title": "Bouquet",
+      "description": "Flowers cut and given to a human who won't appreciate all their hard work."
+    },
+    {
+      "src": "Images/ha.jpg",
+      "title": "Ha!",
+      "description": "Who said I couldn't draw hands?!"
+    },
+    {
+      "src": "Images/Hands.jpg",
+      "title": "Made by Hand",
+      "description": "Another demonstration."
+    },
+    {
+      "src": "Images/Hb.jpg",
+      "title": "HAPPY BAAAAAALL",
+      "description": "I love this drawing, and the color green."
+    },
+    {
+      "src": "Images/Image_20261009_0002.jpg",
+      "title": "October Fragment I",
+      "description": "Copied."
+    },
+    {
+      "src": "Images/Image_20261009_0004.jpg",
+      "title": "October Fragment II",
+      "description": "My first original character (OC) idea."
+    },
+    {
+      "src": "Images/Image_20261009_0007.jpg",
+      "title": "October Fragment III",
+      "description": "The guy with the orange mask from Naruto."
+    },
+    {
+      "src": "Images/Image_20261009_0008.jpg",
+      "title": "Hawk? Or Something Like That",
+      "description": "I don't know which anime he was from. I just remember loving the character."
+    },
+    {
+      "src": "Images/Image_20261009_0010.jpg",
+      "title": "October Fragment V",
+      "description": "Copied."
+    },
+    {
+      "src": "Images/k.jpg",
+      "title": "Mystery",
+      "description": "Spider-Man's villain."
+    },
+    {
+      "src": "Images/k8.jpg",
+      "title": "Kirby",
+      "description": "He's holding me."
+    },
+    {
+      "src": "Images/kin.jpg",
+      "title": "King",
+      "description": "Something familiar, even if you cannot explain why."
+    },
+    {
+      "src": "Images/kj.jpg",
+      "title": "What About Me?",
+      "description": "The song that became famous."
+    },
+    {
+      "src": "Images/Man.jpg",
+      "title": "The Man in the Picture",
+      "description": "Who he is remains a story of its own."
+    },
+    {
+      "src": "Images/panda.jpg",
+      "title": "Red Panda",
+      "description": "I love red pandas."
+    },
+    {
+      "src": "Images/pun.jpg",
+      "title": "Punch",
+      "description": "Serious art. Questionable intentions."
+    },
+    {
+      "src": "Images/san.jpg",
+      "title": "Sanessssssssssssss",
+      "description": "Ah, and the other one."
+    },
+    {
+      "src": "Images/siri.jpg",
+      "title": "Siri's Secret",
+      "description": "There is probably more to this story."
+    },
+    {
+      "src": "Images/suki.jpg",
+      "title": "Blood",
+      "description": "A lot of people like this drawing. I don't know if it's because of the colors or the anime that hardly anyone knows (Demon Slayer)."
+    },
+    {
+      "src": "Images/vak.jpg",
+      "title": "I Like Cows",
+      "description": "It needs no description."
+    },
+    {
+      "src": "Images/zoro.jpg",
+      "title": "Zoro",
+      "description": "Greeeeeeeeeeeeeeen."
+    }
+  ],
+  "frames": {
+    "vertical": [
+      {
+        "src": "Frames/Vertical/Frame1.png",
+        "inset": {
+          "top": 12,
+          "right": 11,
+          "bottom": 12,
+          "left": 11
+        }
+      },
+      {
+        "src": "Frames/Vertical/framev3.png",
+        "inset": {
+          "top": 12,
+          "right": 11,
+          "bottom": 12,
+          "left": 11
+        }
+      }
+    ],
+    "horizontal": [
+      {
+        "src": "Frames/Horizontal/FrameH1.png",
+        "inset": {
+          "top": 11,
+          "right": 12,
+          "bottom": 11,
+          "left": 12
+        }
+      }
+    ],
+    "square": [
+      {
+        "src": "Frames/square/frames1.png",
+        "inset": {
+          "top": 11,
+          "right": 11,
+          "bottom": 11,
+          "left": 11
+        }
+      }
+    ]
+  }
+}

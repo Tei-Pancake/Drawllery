@@ -1,0 +1,244 @@
+<!-- Control discreto de música Tengo una idea llamada drawllery:
+
+Consiste en una pagina web (solo html, css y json) que sera una galeria de arte, de mis dibujos, el usuario solo puede ver las obras, clickear para verlas mas grandes, pero no se como incorporar un elemento interactivo, lo quiero poner bonito con marcos como si fueran pinturas de museo.
+
+No quiero poner descripcion ni nada de eso, ni titulo, solo que sea una experiencia visual, atractiva, me gustaria que al poner el mouse sobre el dibujo se ladee ligeramente o algo asi, NO QUIERO EMOJIS 
+
+Fondo plano blanco y que al entrar por primera vez todo se vea tapado por un telon de teatro rojo, donde el titulo "Drawllery" aparezca como un fade de adentro hacia afuera, y una o dos lineas donde diga "Una galeria de arte autentica, hecho por Andrea Rosario y bla bla bla"
+
+Yo tengo los marcos, ya que serian diferenten para cada foto, cada vez que se reinicie la pagina los dibujos cambian de orden y de marco, asi que la imagen debe de estar separada del marco para que se pueda asignar, de forma aleatorizada, como todos los dibujos no son cuadrados y hay algunos rectangulares verticales, rectangulares horizontales y cuadrados, necesito que la pagina detecte la forma y cargue los marcos segun la forma de la imagen, eso es importante.
+
+Quiero que se vea siempre a la maxima resolucion posible, y tambien quiero poner una cancion de fondo, se podria subir y bajar el volumen pero que no genere una ventana, porque eso distrae.
+
+O la frase de dos lineas tambien podria ser "Una exposicion de arte por..."-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171613">
+  <meta name="description" content="Drawllery: una colección personal de arte e ilustraciones de Andrea E. Rosario M.">
+  <meta name="author" content="Andrea E. Rosario M.">
+  <title>Drawllery — The Art Collection</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <div class="film-grain" aria-hidden="true"></div>
+
+  <main class="site-shell">
+    <header class="site-header">
+      <a class="wordmark" href="#">drawllery<span>®</span></a>
+
+      <div class="header-note">
+        <span class="status-dot"></span>
+        A PERSONAL ART COLLECTION
+      </div>
+
+      <a class="header-index" href="#collection">
+        EXPLORE THE COLLECTION <span>↘</span>
+      </a>
+    </header>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span>01</span> — THE ART COLLECTION</p>
+
+        <h1>
+          A little world<br>
+          of <em>imagined things.</em>
+        </h1>
+
+        <p class="hero-description">
+          Art has always been my way of seeing the world a little differently. What began as a simple fascination grew into a collection of characters, fleeting ideas, and little universes born from the tip of a pencil. Each drawing holds a piece of my imagination (or a shameless Pinterest rip-off), a moment in time, a story waiting to be discovered.
+        </p>
+
+        <a class="text-link" href="#collection">
+          Join to the exposition <span>↓</span>
+        </a>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="hero-orbit orbit-one"></div>
+        <div class="hero-orbit orbit-two"></div>
+
+        <div class="hero-stamp">SNOW<br>GLOBE</div>
+
+        <div class="hero-coordinate">
+         THIS IS FOR HACK CLUB<br>
+         SO I BUILDED SOMETHING COOL WITH MY ART
+        </div>
+
+        <div class="hero-asterisk">❄</div>
+      </div>
+
+      <div class="hero-footer">
+        <span>CURATED BY ANDREA E. ROSARIO M.</span>
+        <span>SCROLL TO DISCOVER ↓</span>
+      </div>
+    </section>
+
+    <section class="collection-section" id="collection">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span>02</span> — THE GALLERY</p>
+          <h2>Collected <em>works.</em></h2>
+        </div>
+
+        <p class="section-intro">
+          Each piece has its own character.<br>
+          Find one that speaks to you.
+        </p>
+      </div>
+
+      <div class="collection-toolbar">
+        <label class="search-box">
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <span class="visually-hidden">Search artworks</span>
+          <input
+            id="artwork-search"
+            type="search"
+            placeholder="Buscar en la colección…"
+            autocomplete="off"
+          >
+        </label>
+
+        <div class="toolbar-right">
+          <span id="results-count" class="results-count">
+            LOADING ARTWORKS
+          </span>
+
+          <button id="shuffle-button" class="shuffle-button" type="button">
+            <span aria-hidden="true">⤨</span> Shuffle
+          </button>
+        </div>
+      </div>
+
+      <div
+        id="gallery"
+        class="gallery"
+        role="list"
+        aria-label="Colección de obras"
+      ></div>
+
+      <p id="empty-state" class="empty-state" hidden>
+        We couldn't find any artworks matching your search.
+        Try another term.
+      </p>
+
+      <div class="gallery-end">
+        <span>END OF THE WALL</span>
+        <span aria-hidden="true">✳</span>
+        <span>MORE TO COME</span>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <a class="wordmark footer-wordmark" href="#">
+        drawllery<span>®</span>
+      </a>
+
+      <p>A little archive made out of curiosity.</p>
+
+      <span class="footer-credit">© ANDREA E. ROSARIO M.</span>
+    </footer>
+  </main>
+
+  <section id="intro" class="intro" aria-label="Bienvenida a Drawllery">
+    <div class="curtain curtain-left" aria-hidden="true"></div>
+    <div class="curtain curtain-right" aria-hidden="true"></div>
+
+    <div class="intro-content">
+      <p class="intro-eyebrow">AN ART EXPOSITION BY</p>
+
+      <h2>Drawllery</h2>
+
+      <p class="intro-subtitle">Andrea E. Rosario M.</p>
+
+      <button id="enter-button" class="enter-button" type="button">
+        Enter the Gallery <span>↗</span>
+      </button>
+
+      <p class="intro-hint">USE YOUR EYES. TAKE YOUR TIME.</p>
+    </div>
+
+    <button id="skip-intro" class="skip-intro" type="button">
+      Skip intro ↗
+    </button>
+  </section>
+
+  <section
+    id="lightbox"
+    class="lightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Obra ampliada"
+    aria-hidden="true"
+  >
+    <button
+      id="close-lightbox"
+      class="close-lightbox"
+      type="button"
+      aria-label="Cerrar obra ampliada"
+    >×</button>
+
+    <button
+      id="lightbox-prev"
+      class="lightbox-arrow lightbox-prev"
+      type="button"
+      aria-label="Obra anterior"
+    >←</button>
+
+    <div id="lightbox-content" class="lightbox-content"></div>
+
+    <button
+      id="lightbox-next"
+      class="lightbox-arrow lightbox-next"
+      type="button"
+      aria-label="Obra siguiente"
+    >→</button>
+
+    <p class="lightbox-help">
+      PRESS ESC TO CLOSE <span>·</span> ← → TO NAVIGATE
+    </p>
+  </section>
+
+  <aside class="audio-control" aria-label="Controles de música">
+    <span class="audio-label" aria-hidden="true">♫</span>
+
+    <button
+      id="audio-toggle"
+      type="button"
+      aria-label="Activar o pausar música"
+      aria-pressed="false"
+    >Music: Off</button>
+
+    <label class="volume-label" for="volume">VOL.</label>
+
+    <input
+      id="volume"
+      type="range"
+      min="0"
+      max="1"
+      step="0.01"
+      value="0.25"
+      aria-label="Volumen de la música"
+    >
+  </aside>
+
+  <audio id="background-music" loop preload="none">
+    <source
+      src="./Audio/C418  - Sweden - Minecraft Volume Alpha - SMORT.mp3"
+      type="audio/mpeg"
+    >
+    Tu navegador no admite la reproducción de audio.
+  </audio>
+</body>
+</html>""
