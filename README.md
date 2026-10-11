@@ -38,7 +38,3 @@ Drawllery is a personal project that I can continue improving as I experiment wi
 # Author
 
 Created by **Andrea E. Rosario M.**
-
----
-
-*Every image has a place. This is mine.*
