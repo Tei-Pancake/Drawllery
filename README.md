@@ -6,19 +6,10 @@ Drawllery is a personal digital art gallery designed to display illustrations in
 
 ## Preview
 
-![Drawllery homepage](Images/your-homepage-screenshot.png)
-
-*The main gallery.*
-
-![Drawllery gallery view](Images/your-gallery-screenshot.png)
-
-*An overview of the artwork collection.*
-
-![Drawllery artwork preview](Images/your-artwork-screenshot.png)
-
-*Artwork displayed in an enlarged view.*
+![Drawllery homepage](Images/telon.png)
 
 # Features
+![Drawllery gallery view](Images/1.png)
 
 - Visual gallery
 - Randomized frames
@@ -28,6 +19,7 @@ Drawllery is a personal digital art gallery designed to display illustrations in
 - Personal collection
 
 # What I Learned
+![Drawllery artwork preview](Images/banner.png)
 
 While building Drawllery, I explored how to combine HTML, CSS, and JavaScript to create an interactive visual experience. The project gave me the opportunity to experiment with layouts, animations, hover effects, image presentation, and organizing artwork data with JSON.
 
