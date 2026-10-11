@@ -1,7 +1,5 @@
 # Drawllery
 
-*A personal gallery for digital art.*
-
 Drawllery is a personal digital art gallery designed to display illustrations in a visually immersive way. Inspired by museum walls and cinematic presentations, it transforms a simple collection of images into an experience where the artwork takes center stage.
 
 ## Preview
