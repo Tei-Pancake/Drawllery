@@ -39,18 +39,6 @@ One of the main challenges was finding a balance between making the gallery visu
 
 Another challenge was coordinating the different interactions and visual effects, especially the opening curtain animation, while making sure the experience felt smooth and immersive without becoming overwhelming.
 
-# Do you wanna try it? this is theeeee project Structure
-
-Drawllery/
-├── index.html
-├── style.css
-├── script.js
-├── artworks.json
-├── Images/
-├── Frames/
-└── Audio/
-
-
 # What's Next?
 
 Drawllery is a personal project that I can continue improving as I experiment with new ideas and add more artwork to the collection.
